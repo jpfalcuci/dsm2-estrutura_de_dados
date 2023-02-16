@@ -1,2 +1,7 @@
-# ed-not-2023-1
-Repositório da disciplina Estruturas de Dados, 2º semestre DSM noturno Fatec Franca 2023/1
+# Estrutura de Dados
+
+Curso: Desenvolvimento de Software Multiplataforma (Fatec - Franca/SP)
+
+Disciplina: Estrutura de Dados
+
+Período: 2º semestre (2023/1)
