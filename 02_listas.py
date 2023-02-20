@@ -2,7 +2,7 @@
 # Listas são uma forma de armazenar mais de um valor em uma única variável
 # Os valores podem ser de tipos diferentes
 
-# Uma lista de números
+# Uma lista de números, strings e boolean
 valores = [2, 3, 5, 7, 9, 11, 'batata', 'tomate', True]
 
 
