@@ -14,6 +14,8 @@ def busca_sequencial(lista, val):
     # Percorreu toda a lista e não encontrou val: retorna -1
     return -1
 
+# Busca sequencial: Lista precisa estar ordenada e quanto mais perto do fim o item estiver, mais tempo o algoritmo demora para encontrar
+
 
 # TESTES
 
