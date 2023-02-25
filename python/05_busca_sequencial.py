@@ -25,7 +25,7 @@ resultado = busca_sequencial(nums, 15)
 print(f'Posição do valor 15 na lista: {resultado}')
 print('\n', '-' * 80, '\n', sep='')
 
-# Procurando o valor 15
+# Procurando o valor 20
 resultado = busca_sequencial(nums, 20)
 print(f'Posição do valor 20 na lista: {resultado}')
 print('\n', '-' * 80, '\n', sep='')
@@ -43,6 +43,16 @@ sys.dont_write_bytecode = True # Impede a criação do cache
 
 from time import time
 from data.nomes_desord import nomes
+
+hora_ini = time()
+resultado = busca_sequencial(nomes, 'JOAO')
+hora_fim = time()
+print(f'Posição do valor "JOAO" na lista: {resultado}')
+print(f'Tempo gasto: {round((hora_fim - hora_ini) * 1000, 2)}ms')
+print('\n', '-' * 80, '\n', sep='')
+
+
+from data.lista_nomes import nomes
 
 hora_ini = time()
 resultado = busca_sequencial(nomes, 'JOAO')
