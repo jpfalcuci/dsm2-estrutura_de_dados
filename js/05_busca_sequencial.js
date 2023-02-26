@@ -2,10 +2,10 @@
 const nums = [9, 21, 33, 12, 0, 18, 24, 30, 15, 6, 3, 27];
 
 /**
-* Função que realiza uma busca sequencial em um array procurando por um determinado valor.
-* Se o valor for encontrado, retorna a posição onde foi encontrado.
-* Caso contrário, retorna o valor -1.
-*/
+ * Função que realiza uma busca sequencial em um array procurando por um determinado valor.
+ * Se o valor for encontrado, retorna a posição onde foi encontrado.
+ * Caso contrário, retorna o valor -1.
+ */
 function buscaSequencial(array, valor) {
     for (let i = 0; i < array.length; i++) {
         // Encontrou o valor; retorna a posição onde foi encontrado

@@ -1,6 +1,6 @@
 /**
-* Função para calcular o Índice de Massa Corpórea de uma pessoa, dados o seu peso e a sua altura
-*/
+ * Função para calcular o Índice de Massa Corpórea de uma pessoa, dados o seu peso e a sua altura
+ */
 function imc(peso, altura) {
     return peso / altura ** 2; // Peso dividido pela altura elevada ao quadrado
 }
@@ -16,8 +16,8 @@ console.log("\n" + "-".repeat(80) + "\n");
 const pi = Math.PI;
 
 /**
-* Função para calcular a área de figuras geométricas planas
-*/
+ * Função para calcular a área de figuras geométricas planas
+ */
 function calcularArea(base, altura, tipo) {
   if (tipo === 'R') {           // Retângulo
     return (base * altura).toFixed(2);
