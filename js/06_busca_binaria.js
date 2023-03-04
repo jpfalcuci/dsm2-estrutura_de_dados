@@ -6,19 +6,20 @@
  * ou que reste apenas uma sub lista vazia, quando se conclui que o valor de busca não existe na lista
  */
 
+let comps = 0;
 
 function buscaBinaria(lista, val) {
-    let ini = 0;  // Início da lista
-    let fim = lista.length - 1;  // Fim da lista
-    let comps = 0;  // Conta o número de comparações
-  
+    comps = 0;
+    let ini = 0; // Início da lista
+    let fim = lista.length - 1; // Fim da lista
+
     while (ini <= fim) {
         // Resultado da divisão inteira (Descarta as casas decimais)
-        const meio = Math.floor((ini + fim) / 2);
+        let meio = Math.floor((ini + fim) / 2);
 
         // O valor de busca foi encontrado, retorna a posição
         if (lista[meio] === val) {
-            comps += 1;
+            comps++;
             return meio;
         } else if (val < lista[meio]) {
             comps += 2;
@@ -28,6 +29,36 @@ function buscaBinaria(lista, val) {
             ini = meio + 1;
         }
     }
-  
     return -1; // Valor não existe na lista
 }
+
+
+let nomes = require('./data/lista_nomes.json');
+
+let horaIni = Date.now();
+let resultado = buscaBinaria(nomes, 'JOAO');
+let horaFim = Date.now();
+console.log(`Posição do valor "JOAO" na lista: ${resultado}`);
+console.log(`Tempo gasto: ${(horaFim - horaIni).toFixed(2)}ms, comparações: ${comps}`);
+console.log('-'.repeat(80) + '\n');
+
+horaIni = Date.now();
+resultado = buscaBinaria(nomes, 'CARLOS');
+horaFim = Date.now();
+console.log(`Posição do valor "CARLOS" na lista: ${resultado}`);
+console.log(`Tempo gasto: ${(horaFim - horaIni).toFixed(2)}ms, comparações: ${comps}`);
+console.log('-'.repeat(80) + '\n');
+
+horaIni = Date.now();
+resultado = buscaBinaria(nomes, 'YARA');
+horaFim = Date.now();
+console.log(`Posição do valor "YARA" na lista: ${resultado}`);
+console.log(`Tempo gasto: ${(horaFim - horaIni).toFixed(2)}ms, comparações: ${comps}`);
+console.log('-'.repeat(80) + '\n');
+
+horaIni = Date.now();
+resultado = buscaBinaria(nomes, 'ORKUTILSON');
+horaFim = Date.now();
+console.log(`Posição do valor "ORKUTILSON" na lista: ${resultado}`);
+console.log(`Tempo gasto: ${(horaFim - horaIni).toFixed(2)}ms, comparações: ${comps}`);
+console.log('-'.repeat(80) + '\n');
