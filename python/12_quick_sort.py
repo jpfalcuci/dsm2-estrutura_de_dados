@@ -74,3 +74,25 @@ print('-' * 80, '\n', sep='')
 
 
 ################################################################################
+
+import tracemalloc  # biblioteca para medir o consumo de memória
+import sys
+sys.dont_write_bytecode = True # Impede a criação do cache
+
+from time import time
+from data.nomes_desord import nomes
+
+passadas = comps = trocas = 0
+
+tracemalloc.start() # Inicia a medição de memória
+hora_ini = time()
+quick_sort(nomes)
+hora_fim = time()
+
+# Captura as informações de gasto de memória
+mem_atual, mem_pico = tracemalloc.get_traced_memory()
+
+# print("Nomes ordenados: ", resultado)
+print(f'Tempo gasto: {round((hora_fim - hora_ini) * 1000, 2)}ms')
+print(f'Pico de memória: {round(mem_pico / 1024 / 1024, 3)} MB')
+print(f"(Nomes) Comparações: {comps}, trocas: {trocas}, passadas: {passadas}")
