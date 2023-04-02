@@ -12,7 +12,7 @@ let pessoa = {
     peso: 76,
     altura: 1.66,
     aposentado: true,
-    filhos: ["Zeferina", "Asdrúbal", "Gercina"]
+    filhos: ["Zeferina", "Asdrúbal", "Gercina"],
 };
 
 // Acessando os valores armazenados no objeto
@@ -21,7 +21,7 @@ console.log("Idade:", pessoa.idade);
 console.log("Aposentado?", pessoa.aposentado);
 
 // Calculando o IMC (Índice de Massa Corporal) da pessoa
-let imc = pessoa.peso / (pessoa.altura ** 2);
+let imc = pessoa.peso / pessoa.altura ** 2;
 console.log(`O IMC de ${pessoa.nome} é ${imc}.`);
 
 ////////////////////////////////////////////////////////////////////////
@@ -29,33 +29,44 @@ console.log(`O IMC de ${pessoa.nome} é ${imc}.`);
 // Representando formas geométricas planas por meio de objetos
 
 let forma1 = {
-    "base": 7.5,
-    "altura": 12,
-    "tipo": "R" // Retângulo
+    base: 7.5,
+    altura: 12,
+    tipo: "R", // Retângulo
 };
-    
+
 let forma2 = {
-    "base": 6,
-    "altura": 2.5,
-    "tipo": "T" // Triângulo
+    base: 6,
+    altura: 2.5,
+    tipo: "T", // Triângulo
 };
-    
+
 let forma3 = {
-    "base": 5,
-    "altura": 3,
-    "tipo": "E" // Elipse
+    base: 5,
+    altura: 3,
+    tipo: "E", // Elipse
 };
-    
+
 const pi = Math.PI;
 
 function calcularArea(forma) {
-    if (forma.tipo === "R") {           // Retângulo
-        return forma.base * forma.altura;
-    } else if (forma.tipo === "T") {    // Triângulo
-        return forma.base * forma.altura / 2;
-    } else if (forma.tipo === "E") {    // Elipse
-        return (forma.base / 2) * (forma.altura / 2) * pi;
-    } else {
-        return null;
+    switch (forma.tipo) {
+        case "R":
+            return forma.base * forma.altura;
+            break;
+        case "T":
+            return (forma.base * forma.altura) / 2;
+            break;
+        case "E":
+            return (forma.base / 2) * (forma.altura / 2) * pi;
+            break;
+        default:
+            return null;
     }
 }
+
+////////////////////////////////////////////////////////////////////////
+
+// Calculando a área das formas
+console.log(`Base: ${forma1.base}; altura: ${forma1.altura}; tipo: ${forma1.tipo}; ÁREA: ${calcularArea(forma1)}`);
+console.log(`Base: ${forma2.base}; altura: ${forma2.altura}; tipo: ${forma2.tipo}; ÁREA: ${calcularArea(forma2)}`);
+console.log(`Base: ${forma3.base}; altura: ${forma3.altura}; tipo: ${forma3.tipo}; ÁREA: ${calcularArea(forma3)}`);
