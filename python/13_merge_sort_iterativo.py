@@ -17,6 +17,7 @@ def merge_sort(lista):
         # Inicia sempre pela esquerda
         esq = 0
         while (esq < n):    # enquanto a posição da esquerda for menor que o tamanho da lista
+            divs += 1
             dir = min(esq + (tam_part * 2 - 1), n - 1)  # define a posição da direita como a menor entre esq+(2*tam_part-1) e n-1
             meio = (esq + dir) // 2 # define a posição do meio como a média entre esq e dir, arredondada para baixo
 
@@ -68,8 +69,6 @@ def merge_sort(lista):
 
         # Incrementa a sublista em potências de 2
         tam_part *= 2
-
-        divs += 1
 
     return lista
 
