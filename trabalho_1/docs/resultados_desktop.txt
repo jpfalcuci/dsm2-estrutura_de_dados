@@ -1,0 +1,162 @@
+Desktop
+    Windows 10 Pro 21H1,
+    Intel i3-10100 CPU @ 3.60GHz
+    Arquitetura x64
+    8,00 GB RAM DDR4 2666 MHz
+    Python 3.11.2
+
+
+Bubble Sort
+
+    Bubble Sort (10k)
+    Tempo gasto: 0:03:19.255147 (199255.15ms | 199.26s)
+    Pico de memória: 0.00031 MB
+    Comparações: 99410058, trocas: 25297553, passadas: 9942
+
+
+    Bubble Sort (25k)
+    Tempo gasto: 0:20:54.944999 (1254945.0ms | 1254.94s)
+    Pico de memória: 0.00031 MB
+    Comparações: 616850325, trocas: 157485392, passadas: 24675
+
+
+    Bubble Sort (50k)
+    Tempo gasto: 1:24:46.323227 (5086323.23ms | 5086.32s)
+    Pico de memória: 0.00032 MB
+    Comparações: 2467600647, trocas: 625828205, passadas: 49353
+
+
+    Bubble Sort (100k)
+    Tempo gasto: 5:40:07.089815 (20407089.81ms | 20407.09s)
+    Pico de memória: 0.00032 MB
+    Comparações: 9925800741, trocas: 2498177562, passadas: 99259
+
+
+Selection Sort
+
+    Selection Sort (10k)
+    Tempo gasto: 0:00:57.590540 (57590.54ms | 57.59s)
+    Pico de memória: 0.0004 MB
+    Comparações: 49995000, trocas: 9990, passadas: 9999
+
+
+    Selection Sort (25k)
+    Tempo gasto: 0:06:05.828327 (365828.33ms | 365.83s)
+    Pico de memória: 0.0004 MB
+    Comparações: 312487500, trocas: 24984, passadas: 24999
+
+
+    Selection Sort (50k)
+    Tempo gasto: 0:25:05.384494 (1505384.49ms | 1505.38s)
+    Pico de memória: 0.0004 MB
+    Comparações: 1249975000, trocas: 49991, passadas: 49999
+
+
+    Selection Sort (100k)
+    Tempo gasto: 1:42:56.398500 (6176398.5ms | 6176.4s)
+    Pico de memória: 0.0004 MB
+    Comparações: 4999950000, trocas: 99982, passadas: 99999
+
+
+Merge Sort
+
+    Merge Sort (10k)
+    Tempo gasto: 0:00:00.315189 (315.19ms | 0.32s)
+    Pico de memória: 0.23533 MB
+    Divisões: 9999, junções: 9999, comparações: 120188
+
+
+    Merge Sort (25k)
+    Tempo gasto: 0:00:00.790905 (790.9ms | 0.79s)
+    Pico de memória: 0.59077 MB
+    Divisões: 24999, junções: 24999, comparações: 333562
+
+
+    Merge Sort (50k)
+    Tempo gasto: 0:00:01.730634 (1730.63ms | 1.73s)
+    Pico de memória: 1.18712 MB
+    Divisões: 49999, junções: 49999, comparações: 716989
+
+
+    Merge Sort (100k)
+    Tempo gasto: 0:00:03.787339 (3787.34ms | 3.79s)
+    Pico de memória: 2.29016 MB
+    Divisões: 99999, junções: 99999, comparações: 1534073
+
+
+Merge Sort Iter
+
+    Merge Sort Iter (10k)
+    Tempo gasto: 0:00:00.696944 (696.94ms | 0.7s)
+    Pico de memória: 0.0836 MB
+    Divisões: 10005, junções: 10005, comparações: 133931
+
+
+    Merge Sort Iter (25k)
+    Tempo gasto: 0:00:01.902887 (1902.89ms | 1.9s)
+    Pico de memória: 0.22401 MB
+    Divisões: 25006, junções: 25006, comparações: 362203
+
+
+    Merge Sort Iter (50k)
+    Tempo gasto: 0:00:03.977243 (3977.24ms | 3.98s)
+    Pico de memória: 0.44761 MB
+    Divisões: 50006, junções: 50006, comparações: 773356
+
+
+    Merge Sort Iter (100k)
+    Tempo gasto: 0:00:08.634972 (8634.97ms | 8.63s)
+    Pico de memória: 0.89482 MB
+    Divisões: 100006, junções: 100006, comparações: 1648605
+
+
+Quick Sort
+
+    Quick Sort (10k)
+    Tempo gasto: 0:00:00.401638 (401.64ms | 0.4s)
+    Pico de memória: 0.00376 MB
+    Comparações: 247491, trocas: 74724, passadas: 6739
+
+
+    Quick Sort (25k)
+    Tempo gasto: 0:00:00.993392 (993.39ms | 0.99s)
+    Pico de memória: 0.00559 MB
+    Comparações: 616240, trocas: 183025, passadas: 16815
+
+
+    Quick Sort (50k)
+    Tempo gasto: 0:00:02.480724 (2480.72ms | 2.48s)
+    Pico de memória: 0.01694 MB
+    Comparações: 1435726, trocas: 442266, passadas: 33606
+
+
+    Quick Sort (100k)
+    Tempo gasto: 0:00:05.054936 (5054.94ms | 5.05s)
+    Pico de memória: 0.0174 MB
+    Comparações: 3148139, trocas: 924104, passadas: 67259
+
+
+Quick Sort Iter
+
+    Quick Sort Iter (10k)
+    Tempo gasto: 0:00:00.512516 (512.52ms | 0.51s)
+    Pico de memória: 0.07767 MB
+    Comparações: 159494, trocas: 88396, passadas: 6709
+
+
+    Quick Sort Iter (25k)
+    Tempo gasto: 0:00:01.272187 (1272.19ms | 1.27s)
+    Pico de memória: 0.19224 MB
+    Comparações: 402578, trocas: 216674, passadas: 16848
+
+
+    Quick Sort Iter (50k)
+    Tempo gasto: 0:00:02.927801 (2927.8ms | 2.93s)
+    Pico de memória: 0.38297 MB
+    Comparações: 929208, trocas: 520436, passadas: 33596
+
+
+    Quick Sort Iter (100k)
+    Tempo gasto: 0:00:06.394516 (6394.52ms | 6.39s)
+    Pico de memória: 0.76469 MB
+    Comparações: 2103882, trocas: 1081151, passadas: 67185
