@@ -55,15 +55,15 @@ class Stack:
 
 ########################################################################
 
-pilha = Stack()     # Cria uma pilha
+# pilha = Stack()     # Cria uma pilha
 
-pilha.push('Primeiro')
-pilha.push('Segundo')
-pilha.push('Terceiro')
+# pilha.push('Primeiro')
+# pilha.push('Segundo')
+# pilha.push('Terceiro')
 
-print(pilha)
+# print(pilha)
 
-removido = pilha.pop()
-print(f'Removido: {removido}')
+# removido = pilha.pop()
+# print(f'Removido: {removido}')
 
-print(pilha)
+# print(pilha)
