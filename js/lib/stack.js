@@ -50,15 +50,17 @@ class Stack {
     }
 }
 
-let pilha = new Stack(); // Cria uma pilha
+module.exports = Stack;
 
-pilha.push("Primeiro");
-pilha.push("Segundo");
-pilha.push("Terceiro");
+// let pilha = new Stack(); // Cria uma pilha
 
-console.log(pilha.toString());
+// pilha.push("Primeiro");
+// pilha.push("Segundo");
+// pilha.push("Terceiro");
 
-let removido = pilha.pop();
-console.log(`Removido: ${removido}`);
+// console.log(pilha.toString());
 
-console.log(pilha.toString());
+// let removido = pilha.pop();
+// console.log(`Removido: ${removido}`);
+
+// console.log(pilha.toString());
