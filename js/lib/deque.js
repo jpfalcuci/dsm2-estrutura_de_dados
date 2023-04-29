@@ -8,47 +8,59 @@ class Deque {
 
     // Método construtor
     constructor() {
-        this.data = []; // Array vazio
+        this._data = []; // Array vazio
     }
 
+    // Método para inserção no início
     insertFront(val) {
-        this.data.unshift(val);
+        this._data.unshift(val);
     }
 
-    is_empty() {
-        return this.data.length === 0;
+    // Método para inserção no final
+    insertBack(val) {
+        this._data.push(val);
     }
 
+    // Método que retorna se o deque está vazio (True) ou não (False)
+    isEmpty() {
+        return this._data.length === 0;
+    }
+
+    // Método para remoção do início
     removeFront() {
         if (this.is_empty()) {
             throw new Error("ERRO: Impossível remover de um deque vazio.");
         }
-        return this.data.shift();
+        return this._data.shift();
     }
 
+    // Método para remoção do final
     removeBack() {
         if (this.is_empty()) {
             throw new Error("ERRO: Impossível remover de um deque vazio.");
         }
-        return this.data.pop();
+        return this._data.pop();
     }
 
+    // Método para consultar do início
     peekFront() {
         if (this.is_empty()) {
             throw new Error("ERRO: Impossível consultar um deque vazio.");
         }
-        return this.data[0];
+        return this._data[0];
     }
 
+    // Método para consultar do final
     peekBack() {
         if (this.is_empty()) {
             throw new Error("ERRO: Impossível consultar um deque vazio.");
         }
-        return this.data[this.data.length - 1];
+        return this._data[this._data.length - 1];
     }
 
+    // Método que retorna uma representação do deque como string
     toString() {
-        return this.data.toString();
+        return this._data.toString();
     }
 }
 

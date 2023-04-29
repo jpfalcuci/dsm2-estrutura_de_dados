@@ -9,17 +9,17 @@ class Queue {
 
     // Método construtor
     constructor() {
-        this.__data = []; // Lista vazia
+        this._data = []; // Lista vazia
     }
 
     // Método de inserção. Em filas, tem nome padronizado: enqueue
     enqueue(val) {
-        this.__data.push(val);
+        this._data.push(val);
     }
 
     // Método que retorna se a fila está vazia (true) ou não (false)
     is_empty() {
-        return this.__data.length == 0;
+        return this._data.length == 0;
     }
 
     // Método de remoção. Em filas, tem nome padronizado: dequeue
@@ -27,7 +27,7 @@ class Queue {
         if (this.is_empty()) {
             throw "ERRO: Impossível remover de uma fila vazia.";
         }
-        return this.__data.shift(); // Remove o primeiro item
+        return this._data.shift(); // Remove o primeiro item
     }
 
     // Método para consultar o primeiro item da fila, sem removê-lo
@@ -35,12 +35,12 @@ class Queue {
         if (this.is_empty()) {
             throw "Erro: Impossível consultar uma fila vazia.";
         }
-        return this.__data[0];
+        return this._data[0];
     }
 
     // Método que retorna uma representação da fila como string
     toString() {
-        return this.__data.toString();
+        return this._data.toString();
     }
 }
 
