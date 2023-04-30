@@ -1,7 +1,7 @@
 """
     ESTRUTURA DE DADOS DEQUE
     Deque (Double-Ended QUEue) é uma estrutura de dados derivada da fila que permite inserções e remoções em qualquer uma de suas extremidades.
-    Com isso, o deque pode se comportar tanto como uma fila comum quanto como uma fila comum quanto uma fila em que são admitidas inserções prioritários e a possibilidade de desistência (remoção) do último item.
+    Com isso, o deque pode se comportar tanto como uma fila comum quanto como uma fila em que são admitidas inserções prioritários e a possibilidade de desistência (remoção) do último item.
 """
 
 class Deque:
