@@ -28,7 +28,7 @@ class Deque {
 
     // Método para remoção do início
     removeFront() {
-        if (this.is_empty()) {
+        if (this.isEmpty()) {
             throw new Error("ERRO: Impossível remover de um deque vazio.");
         }
         return this._data.shift();
@@ -36,7 +36,7 @@ class Deque {
 
     // Método para remoção do final
     removeBack() {
-        if (this.is_empty()) {
+        if (this.isEmpty()) {
             throw new Error("ERRO: Impossível remover de um deque vazio.");
         }
         return this._data.pop();
@@ -44,7 +44,7 @@ class Deque {
 
     // Método para consultar do início
     peekFront() {
-        if (this.is_empty()) {
+        if (this.isEmpty()) {
             throw new Error("ERRO: Impossível consultar um deque vazio.");
         }
         return this._data[0];
@@ -52,7 +52,7 @@ class Deque {
 
     // Método para consultar do final
     peekBack() {
-        if (this.is_empty()) {
+        if (this.isEmpty()) {
             throw new Error("ERRO: Impossível consultar um deque vazio.");
         }
         return this._data[this._data.length - 1];
