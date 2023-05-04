@@ -18,7 +18,7 @@ for (let pos = 0; pos < expr.length; pos++) {
 
     // Desempilha a posição do último abre parêntese empilhado quando um fecha parêntese é encontrado
     else if (expr[pos] === ")") {
-        if (pilha.is_empty()) {
+        if (pilha.isEmpty()) {
             console.log(`Parêntese fechado na posição ${pos}, sem ter sido aberto`);
         } else {
             const pos_abre = pilha.pop();
@@ -29,7 +29,7 @@ for (let pos = 0; pos < expr.length; pos++) {
 }
 
 // Verificar sobras na pilha
-while (!pilha.is_empty()) {
+while (!pilha.isEmpty()) {
     const pos_abre = pilha.pop();
     console.log(`ERRO: parêntese aberto na posição ${pos_abre} não possui o fecha correspondente`);
 }

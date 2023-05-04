@@ -18,13 +18,13 @@ class Queue {
     }
 
     // Método que retorna se a fila está vazia (true) ou não (false)
-    is_empty() {
+    isEmpty() {
         return this._data.length == 0;
     }
 
     // Método de remoção. Em filas, tem nome padronizado: dequeue
     dequeue() {
-        if (this.is_empty()) {
+        if (this.isEmpty()) {
             throw "ERRO: Impossível remover de uma fila vazia.";
         }
         return this._data.shift(); // Remove o primeiro item
@@ -32,7 +32,7 @@ class Queue {
 
     // Método para consultar o primeiro item da fila, sem removê-lo
     peek() {
-        if (this.is_empty()) {
+        if (this.isEmpty()) {
             throw "Erro: Impossível consultar uma fila vazia.";
         }
         return this._data[0];

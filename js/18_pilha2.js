@@ -31,7 +31,7 @@ rl.question("Informe a palavra a ser verificada: ", (palavra) => {
     // 2) Vamos retirar as letras da pilha, uma a uma, DO FIM PARA O INÍCIO.
     // A operação se repete enquanto a pilha não estiver vazia
     // Cada letra retirada é acrescentada à variável inverso
-    while (!pilha.is_empty()) {
+    while (!pilha.isEmpty()) {
         let letra = pilha.pop();    // Retira o último elemento da pilha
         inverso += letra;           // Acrescenta a letra ao inverso
         console.log(`Pilha: ${pilha.toString()}; inverso: ${inverso}`);

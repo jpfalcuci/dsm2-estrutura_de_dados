@@ -18,14 +18,14 @@ class Stack {
     }
 
     // Método que verifica se pilha está ou não vazia
-    is_empty() {
+    isEmpty() {
         return this._data.length == 0;
     }
 
     // Método para remoção
     // Em pilha, tem nome padronizado: pop
     pop() {
-        if (this.is_empty()) {
+        if (this.isEmpty()) {
             throw "ERRO: impossível remover de uma pilha vazia";
         }
 
@@ -37,7 +37,7 @@ class Stack {
     // Em pilhas, tem nome padronizado: peek
     // ("Peek" significa "dar uma espiadinha" em inglês)
     peek() {
-        if (this.is_empty()) {
+        if (this.isEmpty()) {
             throw "ERRO: impossível consultar uma pilha vazia";
         }
 
