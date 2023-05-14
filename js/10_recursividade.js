@@ -3,7 +3,9 @@
 // Trata-se de uma técnica de programação pela qual uma função chama a si mesma, em uma condição diferente da inicial.
 // O principal objetivo do uso da recursividade é diminuir a complexidade de algoritmos.
 
-// Cálculo do fatorial, versão iterativa (não recursiva)
+/**
+ * Cálculo do fatorial, versão iterativa (não recursiva)
+ */
 function fatorial_iter(num) {
     // Não é possível calcular o fatorial de números negativos
     if (num < 0) {
@@ -28,7 +30,9 @@ function fatorial_iter(num) {
 
 ////////////////////////////////////////////////////////////
 
-// Cálculo do fatorial, de forma recursiva
+/**
+ * Cálculo do fatorial, de forma recursiva
+ */
 function fatorial_rec(num) {
     // Não é possível calcular o fatorial de números negativos
     if (num < 0) {

@@ -1,9 +1,7 @@
 passadas = comps = trocas = 0    # Variáveis de estatísticas
 
 def quick_sort(lista, ini = 0, fim = None):
-    """
-        Função que implementa o algoritmo Quick Sort de forma ITERATIVA
-    """
+    """ Função que implementa o algoritmo Quick Sort de forma ITERATIVA """
 
     global passadas, comps, trocas
 

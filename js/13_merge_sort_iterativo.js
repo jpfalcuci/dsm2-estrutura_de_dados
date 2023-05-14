@@ -1,8 +1,9 @@
 let divs = juncs = comps = 0;
 
-function mergeSort(lista) {
-    
-    // Função que implementa o algoritmo Merge Sort de forma ITERATIVA
+/**
+ * Função que implementa o algoritmo Merge Sort de forma ITERATIVA 
+ */  
+function mergeSort(lista) { 
 
     // Inicia com o menor tamanho de partição de 2^0 = 1
     let tam_part = 1;

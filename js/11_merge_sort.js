@@ -1,10 +1,11 @@
-// ALGORÍTMO DE ORDENAÇÃO MERGE SORT
-
-// No processo de ordenação, esse algoritmo "desmonta" a lista original, contendo N elementos, até obter N listas com apenas um elemento cada uma.
-// Em seguida, usando a técnica de mesclagem (merge), "remonta" a lista, desta vez com os elementos já em ordem.
-
 let divs = juncs = comps = 0;
 
+/**  
+ * ALGORÍTMO DE ORDENAÇÃO MERGE SORT
+ * 
+ * No processo de ordenação, esse algoritmo "desmonta" a lista original, contendo N elementos, até obter N listas com apenas um elemento cada uma.
+ * Em seguida, usando a técnica de mesclagem (merge), "remonta" a lista, desta vez com os elementos já em ordem.
+ */
 function mergeSort(lista) {
 
     // Para que possa haver divisão da lista, esta deve ter mais de um elemento

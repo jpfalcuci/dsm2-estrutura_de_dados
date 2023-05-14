@@ -1,11 +1,12 @@
-// ALGORITMO DE ORDENAÇÃO SELECTION SORT
-
-// Isola (seleciona) o primeiro elemento da lista e, em seguida, encontra o menor valor no restante da lista.
-// Se o valor encontrado for menor que o valor previamente selecionado, efetua a troca entre eles.
-// Continuando, seleciona o segundo elemento da lista, buscando pelo menor valor das posições subsequentes.
-// Faz a troca entre os dois valores, se necessário.
-// O processo se repete até que o penúltimo elemento da lista seja isolado, comparado com o último e feita a troca entre eles, se for o caso
-
+/**
+ * ALGORITMO DE ORDENAÇÃO SELECTION SORT
+ * 
+ * Isola (seleciona) o primeiro elemento da lista e, em seguida, encontra o menor valor no restante da lista.
+ * Se o valor encontrado for menor que o valor previamente selecionado, efetua a troca entre eles.
+ * Continuando, seleciona o segundo elemento da lista, buscando pelo menor valor das posições subsequentes.
+ * Faz a troca entre os dois valores, se necessário.
+ * O processo se repete até que o penúltimo elemento da lista seja isolado, comparado com o último e feita a troca entre eles, se for o caso
+ */
 function selectionSort(lista) {
     let comps = 0;
     let trocas = 0;

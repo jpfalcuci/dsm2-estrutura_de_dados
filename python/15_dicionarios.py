@@ -1,8 +1,6 @@
 """ 
     Dicionário é uma estrutura de dados fornecida pela linguagem Python, 
-    capaz de armazenar múltiplos valores em uma única variável,
-    por meio de pares de chave-valor.
-    ...
+    capaz de armazenar múltiplos valores em uma única variável, por meio de pares de chave-valor.
 """
 
 # Um dicionário é delimitado por chaves {}

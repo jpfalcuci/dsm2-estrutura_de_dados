@@ -1,7 +1,5 @@
-"""
-    Função para calcular o Índice de Massa Corpórea de uma pessoa, dados o seu peso e a sua altura
-"""
 def imc(peso, altura):
+    """ Função para calcular o Índice de Massa Corpórea de uma pessoa, dados o seu peso e a sua altura """
     return peso / altura ** 2   # Peso dividido pela altura elevada ao quadrado
 
 resultado = imc(81, 1.72)
@@ -13,10 +11,8 @@ print('O IMC calculado é ', resultado)
 
 from math import pi
 
-"""
-    Função para calcular a área de figuras geométricas planas 
-"""
 def calcular_area(base, altura, tipo):
+    """ Função para calcular a área de figuras geométricas planas """
     if tipo == 'R':     # Retângulo
         return base * altura
     elif tipo == 'T':   # Triângulo

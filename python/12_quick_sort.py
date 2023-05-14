@@ -1,17 +1,13 @@
-"""
-    ALGORITMO DE ORDENAÇÃO QUICK SORT
+passadas = comps = trocas = 0    # Reseta as variáveis de estatísticas
+
+def quick_sort(lista, ini=0, fim=None):
+    """ ALGORITMO DE ORDENAÇÃO QUICK SORT
 
     Escolha um dos elementos da lista para ser o pivô (na nossa implementação, o último elemento)
     e, na primeira passada, divide a lista, a partir da posição final do pivô, em uma sublista à esquerda,
     contendo apenas valores menores que o pivô, e outra à direita, que contém apenas valores maiores que o pivô.
+    Em seguida, recursivamente, repete o processo em cada uma das sublistas, até que toda lista esteja ordenada. """
 
-    Em seguida, recursivamente, repete o processo em cada uma das sublistas, até que toda lista esteja ordenada.
-"""
-
-passadas = comps = trocas = 0    # Reseta as variáveis de estatísticas
-
-def quick_sort(lista, ini=0, fim=None):
-    
     # Quando não soubermos o valor da variável "fim", vamos atribuir a ela a última posição da lista
     if fim is None: fim = len(lista) - 1
 

@@ -1,7 +1,9 @@
-// ALGORITMO DE ORDENAÇÃO BUBBLE SORT
-// Percorre a lista a ser ordenada em sucessivas passadas, trocando dois elementos adjacentes sempre que o segundo for MENOR que o primeiro.
-// Efetua tantas passadas quanto necessárias, até que, na última passada, nenhuma troca seja efetuada
-
+/**
+ * ALGORITMO DE ORDENAÇÃO BUBBLE SORT
+ * 
+ * Percorre a lista a ser ordenada em sucessivas passadas, trocando dois elementos adjacentes sempre que o segundo for MENOR que o primeiro.
+ * Efetua tantas passadas quanto necessárias, até que, na última passada, nenhuma troca seja efetuada
+ */
 function bubbleSort(lista) {
     let comps = 0;
     let trocas = 0;

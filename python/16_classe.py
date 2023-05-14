@@ -9,16 +9,13 @@ from math import pi
 
 # Por convenção, nomes de classe seguem a convenção PascalCase
 class FormaGeometrica:
+    """ Uma classe pode ter, dentro de si, tanto dados quanto funções (estas, representando os algoritmos).
+    Uma função especial, chamada __init__, é chamada sempre que um novo objeto é criado a partir de uma classe.
+    Essa função especial é chamada de CONSTRUTOR.
 
-    """ 
-        Uma classe pode ter, dentro de si, tanto dados quanto funções (estas, representando os algoritmos).
-        Uma função especial, chamada __init__, é chamada sempre que um novo objeto é criado a partir de uma classe.
-        Essa função especial é chamada de CONSTRUTOR.
-
-        Quando aparecem dentro de uma classe:
-        ~> funções passam a ser chamados de MÉTODOS, é seu primeiro parâmetro é sempre self, que representa o próprio objeto
-        ~> variáveis passam a ser chamadas ATRIBUTOS
-    """
+    Quando aparecem dentro de uma classe:
+    ~> funções passam a ser chamados de MÉTODOS, é seu primeiro parâmetro é sempre self, que representa o próprio objeto
+    ~> variáveis passam a ser chamadas ATRIBUTOS """
 
     def __init__(self, base, altura, tipo):
         # Armazenando os dados recebidos DENTRO do objeto, com self

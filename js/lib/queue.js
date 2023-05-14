@@ -1,28 +1,27 @@
-/* 
-    ESTRUTURA DE DADOS FILA
-    É uma estrutura de dados linear em que a operação de inserção (enqueue) acontece no final (ou cauda) da estrutura,
-    enquanto a operação de remoção (dequeue) ocorre no início (ou cabeça).
-    Em consequência, o funcionamento da fila pode ser descrito como FIFO (First In, First Out): o primeiro a entrar é o primeiro a sair
-*/
-
+/** 
+ * ESTRUTURA DE DADOS FILA
+ * É uma estrutura de dados linear em que a operação de inserção (enqueue) acontece no final (ou cauda) da estrutura,
+ * enquanto a operação de remoção (dequeue) ocorre no início (ou cabeça).
+ * Em consequência, o funcionamento da fila pode ser descrito como FIFO (First In, First Out): o primeiro a entrar é o primeiro a sair
+ */
 class Queue {
 
-    // Método construtor
+    /** Método construtor */
     constructor() {
         this._data = []; // Lista vazia
     }
 
-    // Método de inserção. Em filas, tem nome padronizado: enqueue
+    /** Método de inserção. Em filas, tem nome padronizado: enqueue */
     enqueue(val) {
         this._data.push(val);
     }
 
-    // Método que retorna se a fila está vazia (true) ou não (false)
+    /** Método que retorna se a fila está vazia (true) ou não (false) */
     isEmpty() {
         return this._data.length == 0;
     }
 
-    // Método de remoção. Em filas, tem nome padronizado: dequeue
+    /** Método de remoção. Em filas, tem nome padronizado: dequeue */
     dequeue() {
         if (this.isEmpty()) {
             throw "ERRO: Impossível remover de uma fila vazia.";
@@ -30,7 +29,7 @@ class Queue {
         return this._data.shift(); // Remove o primeiro item
     }
 
-    // Método para consultar o primeiro item da fila, sem removê-lo
+    /** Método para consultar o primeiro item da fila, sem removê-lo */
     peek() {
         if (this.isEmpty()) {
             throw "Erro: Impossível consultar uma fila vazia.";
@@ -38,7 +37,7 @@ class Queue {
         return this._data[0];
     }
 
-    // Método que retorna uma representação da fila como string
+    /** Método que retorna uma representação da fila como string */
     toString() {
         return this._data.toString();
     }

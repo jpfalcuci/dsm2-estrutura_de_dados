@@ -1,12 +1,10 @@
-"""
-    RECURSIVIDADE
-
-    Trata-se de uma técnica de programação pela qual uma função chama a si mesma, em uma condição diferente da inicial.
-    O principal objetivo do uso da recursividade é diminuir a complexidade de algoritmos.
-"""
-
 # Cálculo do fatorial, versão iterativa (não recursiva)
 def fatorial_iter(num):
+    """ RECURSIVIDADE
+
+    Trata-se de uma técnica de programação pela qual uma função chama a si mesma, em uma condição diferente da inicial.
+    O principal objetivo do uso da recursividade é diminuir a complexidade de algoritmos. """
+
     # Não é possível calcular o fatorial de números negativos
     if num < 0:
         raise Exception("Erro: número negativo, cálculo impossível")

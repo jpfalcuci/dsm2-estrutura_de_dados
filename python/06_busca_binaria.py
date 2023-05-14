@@ -1,13 +1,13 @@
-""" 
-    ALGORÍTIMO DE BUSCA BINÁRIA
+comps = 0               # Conta o número de comparações
+
+def busca_binaria(lista, val):
+    """ ALGORÍTIMO DE BUSCA BINÁRIA
+
     Dados de uma lista, que deve estar PREVIAMENTE ORDENADA, e um valor de busca, divide a lista em duas metades
     procurando pelo valor de busca apenas na metade onde o valor poderia estar.
     Novas subdivisões são feitas até que se encontre o valor de busca 
-    ou que reste apenas uma sub lista vazia, quando se conclui que o valor de busca não existe na lista
-"""
+    ou que reste apenas uma sub lista vazia, quando se conclui que o valor de busca não existe na lista """
 
-comps = 0               # Conta o número de comparações
-def busca_binaria(lista, val):
     global comps
     comps = 0
     ini = 0                 # Início da lista

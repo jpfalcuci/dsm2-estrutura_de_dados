@@ -1,11 +1,11 @@
-""" 
-    ALGORITMO DE ORDENAÇÃO BUBBLE SORT
+def bubble_sort(lista):
+    """ ALGORITMO DE ORDENAÇÃO BUBBLE SORT
+
     Percorre a lista a ser ordenada em sucessivas passadas, trocando dois elementos adjacentes sempre que o segundo for MENOR que o primeiro.
     Efetua tantas passadas quanto necessárias, até que, na última passada, nenhuma troca seja efetuada
-    VERSÃO OTIMIZADA COM ENCOLHIMENTO DO PERCURSO A CADA PASSADA
-"""
 
-def bubble_sort(lista):
+    VERSÃO OTIMIZADA COM ENCOLHIMENTO DO PERCURSO A CADA PASSADA """
+
     global comps, trocas, passadas
     comps = trocas = passadas = 0
     desloc = 1

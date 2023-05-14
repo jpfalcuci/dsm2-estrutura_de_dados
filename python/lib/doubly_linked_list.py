@@ -1,10 +1,9 @@
 class DoublyLinkedList:
-    """
-        ESTRUTURA DE DADOS LISTA DUPLAMENTE ENCADEADA
-        Trata-se de uma lista linear, em que seus elementos (chamados nodos ou nós) não estão fisicamente adjacentes uns dos outros,
-        mas ligados logicamente por ponteiros que indicam o nodo anterior e o próximo nodo da sequência.
-        Não possui restrição de acesso - inserções, exclusões e consultas podem ser realizadas em qualquer posição da lista.
-    """
+    """ ESTRUTURA DE DADOS LISTA DUPLAMENTE ENCADEADA
+
+    Trata-se de uma lista linear, em que seus elementos (chamados nodos ou nós) não estão fisicamente adjacentes uns dos outros,
+    mas ligados logicamente por ponteiros que indicam o nodo anterior e o próximo nodo da sequência.
+    Não possui restrição de acesso - inserções, exclusões e consultas podem ser realizadas em qualquer posição da lista. """
 
     class Node:
         """ Classe que representa a unidade de informação armazenada pela lista duplamente encadeada """
@@ -167,15 +166,14 @@ class DoublyLinkedList:
         return self.peek(self.get_count() - 1)
 
     def find(self, val):
-        """
-            Método que procura um nodo por seu valor
-            Retorna a posição do nodo, se o encontrar, ou -1, caso contrário
-        """
+        """ Método que procura um nodo por seu valor
+        Retorna a posição do nodo, se o encontrar, ou -1, caso contrário """
+
         node = self.__head
         for pos in range(0, self.get_count()):
             if node.data == val: return pos     # Encontrou o valor
             node = node.next
-        return -1       # Valor não encontra
+        return -1       # Valor não encontrado
 
     def __str__(self):
         """ Método que exibe uma representação da lista como string """

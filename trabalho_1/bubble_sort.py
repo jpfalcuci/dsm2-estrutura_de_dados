@@ -5,18 +5,18 @@ sys.dont_write_bytecode = True
 
 
 def bubble_sort(lista):
-    """ 
-        ALGORITMO DE ORDENAÇÃO BUBBLE SORT
-        Percorre a lista a ser ordenada em sucessivas passadas, trocando dois elementos adjacentes sempre que o segundo for MENOR que o primeiro.
-        Efetua tantas passadas quanto necessárias, até que, na última passada, nenhuma troca seja efetuada
-    """
+    """ ALGORITMO DE ORDENAÇÃO BUBBLE SORT
+
+    Percorre a lista a ser ordenada em sucessivas passadas, trocando dois elementos adjacentes sempre que o segundo for MENOR que o primeiro.
+    Efetua tantas passadas quanto necessárias, até que, na última passada, nenhuma troca seja efetuada """
+
     global comps, trocas, passadas
     comps = trocas = passadas = 0
 
     while True: # Loop eterno, não sabemos quantas passadas serão necessárias
         trocou = False
         passadas += 1
-        
+
         # Percurso da lista, do primeiro ao PENÚLTIMO elemento, com acesso a cada posição
         for pos in range(len(lista) - 1):
             comps += 1
@@ -26,7 +26,7 @@ def bubble_sort(lista):
                 lista[pos + 1], lista[pos] = lista[pos], lista[pos + 1]
                 trocou = True
                 trocas += 1
-        
+
         if not trocou:  # Não houve troca na passada
             break       # Interrompe o loop eterno; acabou
 

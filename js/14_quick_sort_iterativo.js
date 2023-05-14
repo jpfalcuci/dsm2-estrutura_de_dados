@@ -1,9 +1,10 @@
 let passadas = 0, comps = 0, trocas = 0; // Variáveis de estatísticas
 
+/**
+ * Função que implementa o algoritmo Quick Sort de forma ITERATIVA
+ */
 function quickSort(lista, ini = 0, fim = null) {
-    
-    // Função que implementa o algoritmo Quick Sort de forma ITERATIVA
-    
+
     if (fim === null) fim = lista.length - 1;
 
     // Cria uma lista auxiliar

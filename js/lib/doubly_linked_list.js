@@ -1,11 +1,3 @@
-/**
- * ESTRUTURA DE DADOS LISTA DUPLAMENTE ENCADEADA
- * Trata-se de uma lista linear, em que seus elementos (chamados nodos ou nós) não estão fisicamente adjacentes uns dos outros,
- * mas ligados logicamente por ponteiros que indicam o nodo anterior e o próximo nodo da sequência.
- * Não possui restrição de acesso - inserções, exclusões e consultas podem ser realizadas em qualquer posição da lista.
- */
-
-
 /** 
  * Classe que representa a unidade de informação armazenada pela lista duplamente encadeada
  */
@@ -17,27 +9,28 @@ class Node {
     }
 }
 
+/**
+ * ESTRUTURA DE DADOS LISTA DUPLAMENTE ENCADEADA
+ * 
+ * Trata-se de uma lista linear, em que seus elementos (chamados nodos ou nós) não estão fisicamente adjacentes uns dos outros,
+ * mas ligados logicamente por ponteiros que indicam o nodo anterior e o próximo nodo da sequência.
+ * Não possui restrição de acesso - inserções, exclusões e consultas podem ser realizadas em qualquer posição da lista.
+ */
 class DoublyLinkedList {
 
-    /** 
-     * Construtor da classe DoublyLinkedList
-     */
+    /** Construtor da classe DoublyLinkedList */
     constructor() {
         this._head = null;  // Ponteiro para o primeiro nodo da lista
         this._tail = null;  // Ponteiro para o último nodo da lista
         this._count = 0;    // Quantidade de nodos da lista
     }
 
-    /** 
-     * Método que retorna a quantidade de itens da lista
-     */
+    /** Método que retorna a quantidade de itens da lista */
     getCount() {
         return this._count;
     }
 
-    /** 
-     * Método PRIVADO que encontra um nodo na posição especificada
-     */
+    /** Método PRIVADO que encontra um nodo na posição especificada */
     _findNode(pos) {
         // 1º caso: posição 0, retorna self.__head
         if (pos == 0) {
@@ -68,9 +61,7 @@ class DoublyLinkedList {
         }
     }
 
-    /** 
-     * Método que insere um novo valor à lista
-     */
+    /** Método que insere um novo valor à lista */
     insert(pos, val) {
         // Criamos um novo para armazenar a informação do usuário e também os ponteiros prev e next, ambos apontando para None
         let inserted = new Node(val);
@@ -111,23 +102,17 @@ class DoublyLinkedList {
         this._count++
     }
 
-    /** 
-     * Método de atalho para inserção no início da lista
-     */
+    /** Método de atalho para inserção no início da lista */
     insertFront(val) {
         this.insert(0, val);
     }
 
-    /**
-     * Método de atalho para inserção no final da lista
-     */
+    /** Método de atalho para inserção no final da lista */
     insertBack(val) {
         this.insert(this.getCount(), val)
     }
 
-    /**
-     * Método que remove o nodo da posição especificada
-     */
+    /** Método que remove o nodo da posição especificada */
     remove(pos) {
         let removed, before, after
 
@@ -186,23 +171,17 @@ class DoublyLinkedList {
         return removed.data;
     }
 
-    /**
-     * Método de atalho para remoção do primeiro nodo
-     */
+    /** Método de atalho para remoção do primeiro nodo */
     removeFront() {
         return this.remove(0)
     }
 
-    /**
-     * Método de atalho para remoção do último nodo
-     */
+    /** Método de atalho para remoção do último nodo */
     removeBack() {
         return this.remove(this.getCount() - 1)
     }
 
-    /** 
-     * Método que retorna o valor armazenado na posição especificada, sem removê-lo
-     */
+    /** Método que retorna o valor armazenado na posição especificada, sem removê-lo */
     peek(pos) {
         // 1º caso: lista vazia ou posição fora dos limites
         if (this.getCount() == 0 || pos < 0 || pos >= this.getCount()) {
@@ -213,16 +192,12 @@ class DoublyLinkedList {
         return node.data;
     }
     
-    /** 
-     * Método de atalho para consultar o primeiro nodo
-     */
+    /** Método de atalho para consultar o primeiro nodo */
     peekFront() {
         return this.peek(0);
     }
     
-    /** 
-     * Método de atalho para consultar o último nodo
-     */
+    /** Método de atalho para consultar o último nodo */
     peekBack() {
         return this.peek(this.getCount() - 1);
     }
@@ -240,9 +215,7 @@ class DoublyLinkedList {
         return -1;      // Valor não encontrado
     }
 
-    /** 
-     * Método que exibe uma representação da lista como string
-     */
+    /** Método que exibe uma representação da lista como string */
     toString() {
         if (this.getCount() == 0) return "*** [ LISTA VAZIA ] ***\n\n";
         else {

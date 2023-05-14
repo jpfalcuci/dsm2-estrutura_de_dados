@@ -8,9 +8,7 @@ divs = juncs = comps = 0    # Variáveis de estatísticas
 
 
 def merge_sort(lista):
-    """
-        Função que implementa o algoritmo Merge Sort de forma ITERATIVA
-    """
+    """ Função que implementa o algoritmo Merge Sort de forma ITERATIVA """
 
     global divs, juncs, comps
 

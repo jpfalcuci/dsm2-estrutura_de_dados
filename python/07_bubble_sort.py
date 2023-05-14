@@ -1,10 +1,9 @@
-""" 
-    ALGORITMO DE ORDENAÇÃO BUBBLE SORT
-    Percorre a lista a ser ordenada em sucessivas passadas, trocando dois elementos adjacentes sempre que o segundo for MENOR que o primeiro.
-    Efetua tantas passadas quanto necessárias, até que, na última passada, nenhuma troca seja efetuada
-"""
-
 def bubble_sort(lista):
+    """ ALGORITMO DE ORDENAÇÃO BUBBLE SORT
+
+    Percorre a lista a ser ordenada em sucessivas passadas, trocando dois elementos adjacentes sempre que o segundo for MENOR que o primeiro.
+    Efetua tantas passadas quanto necessárias, até que, na última passada, nenhuma troca seja efetuada """
+
     global comps, trocas, passadas
     comps = trocas = passadas = 0
 

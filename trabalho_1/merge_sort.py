@@ -8,12 +8,10 @@ divs = juncs = comps = 0    # Variáveis de estatísticas
 
 
 def merge_sort(lista):
-    """ 
-        ALGORÍTMO DE ORDENAÇÃO MERGE SORT
+    """ ALGORÍTMO DE ORDENAÇÃO MERGE SORT
 
-        No processo de ordenação, esse algoritmo "desmonta" a lista original, contendo N elementos, até obter N listas com apenas um elemento cada uma.
-        Em seguida, usando a técnica de mesclagem (merge), "remonta" a lista, desta vez com os elementos já em ordem.
-    """
+    No processo de ordenação, esse algoritmo "desmonta" a lista original, contendo N elementos, até obter N listas com apenas um elemento cada uma.
+    Em seguida, usando a técnica de mesclagem (merge), "remonta" a lista, desta vez com os elementos já em ordem. """
 
     global divs, juncs, comps
 
